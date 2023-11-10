@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <div class="background-container"></div>
+
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Given Name: </label>
+        <input id="first-name" name="first-name" type="text" placeholder="Enter your Given Name" required />
+        
+        <label for="last-name">Last Name: </label>
+        <input id="last-name" name="last-name" type="text" placeholder="Enter your Last Name" required />
+        
+        <label for="email">Email: </label>
+        <input id="email" name="email" type="email" placeholder="Enter your email address" required />
+        
+        <label for="new-password">New Password: </label>
+        <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" placeholder="Create a unique password" required />
+        
+        <label for="confirm-password">Confirm Password: </label>
+        <input id="confirm-password" name="confirm-password" type="password" pattern="[a-z0-5]{8,}" placeholder="Confirm password" required />
+    </fieldset>
+    
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male-account"><input id="gender" type="radio" name="account-type" class="inline" value="male" checked /> Male</label>
+        <label for="female-account"><input id="gender" type="radio" name="account-type" class="inline" value="female"/> Female</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What are your skills?</legend>
+        <label for="compArch"><input id="compArch" type="checkbox" name="skills" class="inline" value="compArch" checked />Computer Architecture</label>
+        <label for="compNet"><input id="compNet" type="checkbox" name="skills" class="inline" value="compNet" />Computer Networking</label>
+        <label for="compProg"><input id="compProg" type="checkbox" name="skills" class="inline" value="compProg" />Computer Programming</label>
+        <label for="databaseMngmnt"><input id="databaseMngmnt" type="checkbox" name="skills" class="inline" value="databaseMngmnt" />Database Management</label>
+        <label for="sysAdmin"><input id="sysAdmin" type="checkbox" name="skills" class="inline" value="sysAdmin" />System Administration</label>
+        <label for="UIUX"><input id="UIUX" type="checkbox" name="skills" class="inline" value="UI/UX" />User Interface / Experience</label>
+        <label for="webDev"><input id="webDev" type="checkbox" name="skills" class="inline" value="webDev" />Web Development</label>
+      </fieldset>
+      <fieldset>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">Year Level
+          <select id="referrer" name="referrer">
+            <option value="">Select Year Level</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+            <option value="4">Fourth Year</option>
+          </select>
+        </label>
+        <label for="bio">Other skill not mentioned above:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your other skills here..."></textarea>
+        </label>
+      </fieldset>
+      <div class="login-box">
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          SUBMIT
+        </a>
+  
+      
+      <div class="centered-link"">
+        <a href="..\UserLogin\index.html">Back to Login</a>
+      </div>
+      </div>
+    </form>
+  </body>
+</html>
